@@ -26,7 +26,7 @@ Ensure you have the following packages installed using 'go get':
 
     import (
         "net/http"
-        cors "github.com/UcheEke/gocors"
+        cors "github.com/UcheEke/GoCORS"
     )
 
     func rootHandler(w http.ResponseWriter, r *http.Request){
