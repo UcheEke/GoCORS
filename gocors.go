@@ -8,21 +8,21 @@ import (
     "fmt"
 )
 
-type Ws struct {
+type CORSRouter struct {
     Address string
     Port string
     *mux.Router  // Embedded Gorilla Mux Router
 }
 
-func NewCORSRouter(address, port string) *Ws {
-    ws := new(Ws)
-    ws.Router = mux.NewRouter()
-    ws.Address = address
-    ws.Port = port
-    return ws
+func NewCORSRouter(address, port string) *CORSRouter {
+    cr := new(CORSRouter)
+    cr.Router = mux.NewRouter()
+    cr.Address = address
+    cr.Port = port
+    return cr
 }
 
-func (s *Ws) Start(){
+func (s *CORSRouter) Start(){
     // Create an instance of negroni Classic
     n := negroni.Classic()
 
