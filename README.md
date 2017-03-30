@@ -4,6 +4,6 @@ A simple webserver that allows for Cross Origin Requests in a development enviro
 ### Dependencies
 
 Ensure you have the following packages installed using 'go get':
-github.com/urfave/negroni
-github.com/gorilla/mux
+- github.com/urfave/negroni
+- github.com/gorilla/mux
 
